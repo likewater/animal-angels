@@ -1,0 +1,7 @@
+<h1>Animal Angels - All Animals</h1>
+<h2>List of animals goes here...</h2>
+<div *ngFor="let animal of animals" (click)="goToDetailPage(animal)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{animal.name}}</em> owned by {{animal.owner}}</h3>
+  </div>
+</div>
