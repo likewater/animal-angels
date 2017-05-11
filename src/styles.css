@@ -26,6 +26,12 @@ body{
   padding: 0px;
 }
 
+.animalImageSmall{
+  width: auto;
+  height: 120px;
+
+}
+
 h2, h1{
   color: #C63D0F;
 }
