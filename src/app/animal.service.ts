@@ -1,14 +1,19 @@
 import { Injectable } from '@angular/core';
 import { Animal } from './animal.model';
 import { ANIMALS } from './mock-animals';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
 export class AnimalService {
+  animals: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(private database: AngularFireDatabase) {
+    this.animals = database.list('animals');
+  }
 
   getAnimals() {
-    return ANIMALS;
+    // return ANIMALS;
+    return this.animals;
   }
 
   getAnimalById(animalId: number){

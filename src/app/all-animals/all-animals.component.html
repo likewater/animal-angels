@@ -1,6 +1,7 @@
 
 <h2>Help A Needy Pet</h2>
-<div *ngFor="let animal of animals" (click)="goToDetailPage(animal)" class="panel panel-default">
+<!-- <div *ngFor="let animal of animals" (click)="goToDetailPage(animal)" class="panel panel-default"> -->
+<div *ngFor="let animal of animals | async" (click)="goToDetailPage(animal)" class="panel panel-default">
   <div class="panel-body">
     <h3><em>{{animal.name}}</em> owned by {{animal.owner}}</h3><br>
     <img class="animalImageSmall" src="/images/{{animal.image}}">

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Animal } from '../animal.model';
 import { AnimalService } from '../animal.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-all-animals',
@@ -10,7 +11,9 @@ import { AnimalService } from '../animal.service';
   providers: [AnimalService]
 })
 export class AllAnimalsComponent implements OnInit {
-  animals: Animal[];
+  // animals: Animal[];
+  animals: FirebaseListObservable<any[]>;
+
 
 constructor(private router: Router, private animalService: AnimalService) { }
 
@@ -35,6 +38,5 @@ constructor(private router: Router, private animalService: AnimalService) { }
    goToDetailPage(clickedAnimal: Animal) {
        this.router.navigate(['all-animals', clickedAnimal.id]);
      };
-
 
 }

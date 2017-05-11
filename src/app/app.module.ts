@@ -10,6 +10,17 @@ import { routing } from './app.routing';
 import { AllAnimalsComponent } from './all-animals/all-animals.component';
 import { AnimalDetailComponent } from './animal-detail/animal-detail.component';
 
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +33,9 @@ import { AnimalDetailComponent } from './animal-detail/animal-detail.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

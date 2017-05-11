@@ -1,0 +1,52 @@
+{ "animals": [{
+    "name": "Bowsy",
+    "owner": "Layla Martin",
+    "breed": "Boxer",
+    "description": "Bowsy loves to run and jump but broke his leg. He needs reconstructive surgery to get his groove back, please help him",
+    "image": "/bowsy.jpg",
+    "category": "Dog",
+    "location": "Los Angeles",
+    "goal": 1200,
+    "id": 1
+    }, {
+    "name": "Kitten",
+    "owner": "Ronny Boondocker",
+    "breed": "American Shorthair",
+    "description": "Kitten lost her tail in an errant door slam. I've found a doctor that can surgically attach a faux tail to Kitten's tail stub. She was so proud of her tail. I want her to purr again.",
+    "image": "/kitten.jpg",
+    "category": "Cat",
+    "location": "Phoenix",
+    "goal": 5000,
+    "id": 2
+    }, {
+    "name": "Tweeter",
+    "owner": "Gin Havlicek",
+    "breed": "Parakeet",
+    "description": "Tweeter has a strained wing and can't fly anymore. I just can't afford a visit to the vet. Please help",
+    "image": "/tweeter.jpg",
+    "category": "Bird",
+    "location": "Boston",
+    "goal": "300",
+    "id": 3
+    }, {
+    "name": "Seeker",
+    "owner": "Bob Smith",
+    "breed": "Springer Spaniel",
+    "description": "Seeker has terminal cancer. I just want to take him on one last hunting trip. Just one more time to see the birds in Canada",
+    "image": "/seeker.jpg",
+    "category": "Dog",
+    "location": "Minneapolis",
+    "goal": 1400,
+    "id": 4
+    }, {
+    "name": "Tripod",
+    "owner": "Miriam Winglett",
+    "breed": "Goat",
+    "description": "Tripod is my loveable three legged goat. No I don't want another leg for him. It's his birthday and I want to party. Send me some FUN funds.",
+    "image": "/tripod.jpg",
+    "category": "Goat",
+    "location": "Akron",
+    "goal": 1200,
+    "id": 5
+    }]
+}
