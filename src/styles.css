@@ -10,7 +10,7 @@ body{
   "Helvetica Neue Light","Helvetica Neue","Helvetica","Arial","Lucida Grande",sans-serif;
   height: 100%;
   padding: 0px;
-  background-color: #FDF3E7;
+  background-color: #ECECEC;
   color: #3B3738;
 }
 
@@ -66,13 +66,15 @@ p b{
 }
 
 button{
-  background-color: #FDF3E7;
-  border-radius: 12px;
+  background-color: #CBE6CA;
+  border-radius: 5px;
+  border: none;
+  color: #C63D0F;
 }
 
 .well{
   color: #3B3738;
-  background-color: #C63D0F;
+  background-color: #FFFFFF;
 }
 
 #aboutWell{
@@ -89,7 +91,7 @@ button{
 
 .navbar{
   margin: 0px;
-  border-radius: 6px;
+  border-radius: 0px;
   min-height: 30px;
 }
 
